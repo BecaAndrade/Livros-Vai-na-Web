@@ -1,0 +1,59 @@
+.Box{
+    background: linear-gradient(45deg, #001B2F, #005695);        
+    height: 15vh;
+    border: solid green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    div{
+        border: solid green;
+        width: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        h2{
+            color: aliceblue;
+        }
+    }
+    
+}
+
+.Navegacao{
+    border: solid red;
+    width: 30%;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+
+        li{
+            color: aliceblue;
+
+        }
+    }
+}
+
+.Pesquisa {
+    border-radius: 20px;
+        border: 2px solid white;
+        background: #005695;        
+        width: 301.743px;
+        height: 41.496px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    input {
+        border: 2px solid transparent;
+        background: #005695;        
+      
+
+        &::placeholder {
+            color: #ffff; 
+            opacity: 1;      
+           }
+    }
+}
+
