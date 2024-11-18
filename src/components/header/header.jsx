@@ -1,32 +1,45 @@
 import React from "react";
-import Logo from "../../img/Logologo.png"
-import Lupa from "../../img/lupa.png"
+//mportando estilo da header
 import S from "./header.module.scss"
+//importando as img
+import Logo from "../../assets/img/Logologo.png"
+import Lupa from "../../assets/img/lupa.png"
+//importando as rotas
+import Inicio from "../../Pages/Inicio/Inicio"
+import Doados from "../../Pages/Doados/Doados"
+import QueroDoar from "../../Pages/Quero Doar/QueroDoar";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className={S.Box}>
-        <div>
+    <BrowserRouter>
+    <header>
+        <section>
         <img src={Logo} alt="" />
         <h2>Livros Vai na Web</h2>
-        </div>
+        </section>
 
-        <nav className={S.Navegacao}>
+        <nav >
             <ul>
-            <li>Início</li>
-            <li>Livros Doados</li>
-            <li>Quero Doar</li>
+            <li><Link to="/">Início</Link></li>
+            <li><Link to="Doados">Livros Doados</Link></li>
+            <li><Link to="QueroDoar">Quero Doar</Link></li>
             </ul>
         </nav>
-        <form className={S.Pesquisa}>
-        <input 
-          type="text" 
-          placeholder="O que você procura?" 
-        />
-         <img src={Lupa} alt="" />
-        </form>
+        <div>
+          <input type="text" />
+        <img src={Lupa} alt="" />
+        </div> 
     </header>
+    <Routes>
+      <Route path="/" element={<Inicio/>}/>
+      <Route path="/Doados" element={<Doados/>}/>
+      <Route path="/QueroDoar" element={<QueroDoar/>}/>
+    </Routes>
+    </BrowserRouter>
   );
+  
+
 }
 
 export default Header;
