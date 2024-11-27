@@ -14,22 +14,29 @@ function Header() {
   return (
     <BrowserRouter>
     <header>
-        <section>
+        <section className={S.LogoHeader}>
         <img src={Logo} alt="" />
         <h2>Livros Vai na Web</h2>
         </section>
 
-        <nav >
+        <nav className={S.nav}>
             <ul>
-            <li><Link to="/">Início</Link></li>
-            <li><Link to="Doados">Livros Doados</Link></li>
-            <li><Link to="QueroDoar">Quero Doar</Link></li>
+            <li><Link className={S.link} to="/">Início</Link></li>
+            <li><Link className={S.link} to="Doados">Livros Doados</Link></li>
+            <li><Link className={S.link} to="QueroDoar">Quero Doar</Link></li>
             </ul>
         </nav>
-        <div>
-          <input type="text" />
-        <img src={Lupa} alt="" />
-        </div> 
+        <section className={S.BarradeBusca}>
+          <input className={S.BoxInput}
+            type="search"
+            name=""
+            id=""
+            placeholder="O que você procura?"
+          />
+          <button>
+            <img src={Lupa} alt="Icone de lupa branca" />
+          </button>
+        </section>
     </header>
     <Routes>
       <Route path="/" element={<Inicio/>}/>
