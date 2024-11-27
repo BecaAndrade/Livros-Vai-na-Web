@@ -15,7 +15,7 @@ function Header() {
     <BrowserRouter>
     <header>
         <section className={S.LogoHeader}>
-        <img src={Logo} alt="" />
+        <img src={Logo} alt="Imagem de ilustração de livro aberto com capa azul" />
         <h2>Livros Vai na Web</h2>
         </section>
 

@@ -17,17 +17,17 @@ export default function Inicio(){
            <section>
             <div className={S.Boxcards}>
                 <article>
-                    <img src={icon1} alt="" />
+                    <img src={icon1} alt="circulo de pessoas" />
                    <p> Oferece livros a quem não tem acesso, ajudando a reduzir a exclusão social.</p>
                 </article>
                 <article>
-                <img src={icon2} alt="" />
+                <img src={icon2} alt="pessoa lendo" />
                 <p> Estimula o hábito da leitura e o aprendizado contínuo.</p>
                 </article><article>
-                <img src={icon3} alt="" />
+                <img src={icon3} alt="pessoas unidas" />
                 <p>Fornece conhecimento e inspiração, permitindo que indivíduos transformem suas vidas.</p>
                 </article><article>
-                <img src={icon4} alt="" />
+                <img src={icon4} alt="balança" />
                 <p>Garante que todos, independentemente de sua condição, tenham oportunidades de aprendizado.</p>
                 </article>
             </div>
