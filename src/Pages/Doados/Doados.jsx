@@ -17,54 +17,72 @@ export default function Doados(){
         </section>
         <section className={S.boxLivros}>
             <div>
+                <article>
                 <img className={S.img} src={Biblioteca} alt="Livro Biblioteca da Meia Noite " />
                 <h3> Biblioteca da Meia Noite </h3>
-                <h4>Matt Haig</h4>
+                <p>Matt Haig</p>
                 <p>Ficção Científica</p>
+                </article>
             </div>
             <div>
+            <article>
                 <img className={S.livroAlice} src={Alice} alt=" Livro Alice no Pais das Maravilhas" />
                 <h3> Alice no Pais das Maravilhas </h3>
-                <h4>Lewis Carroll</h4>
+                <p>Lewis Carroll</p>
                 <p>Literatura e Ficção para Adolescentes</p>
+                </article>
             </div>
             <div>
-                <img className={S.img} src={Coraline} alt="Livro Coraline" />
+            <article>
+            <img className={S.img} src={Coraline} alt="Livro Coraline" />
                 <h3> Coraline</h3>
-                <h4> Neil Gaiman</h4>
+                <p> Neil Gaiman</p>
                 <p>Ficção Científica</p>
+            </article>
             </div>                 
             <div>
-                <img className={S.img} src={HarryPotter} alt="Livro saga Harry Potter" />
+            <article>
+            <img className={S.img} src={HarryPotter} alt="Livro saga Harry Potter" />
                 <h3>Harry Potter - E a Câmara Secreta</h3>
-                <h4>J.K. Rowling</h4>
+                <p>J.K. Rowling</p>
                 <p> Literatura e Ficção</p>
+            </article>           
             </div>
             </section>
             <section className={S.boxLivros}>
             <div>
-                <img className={S.livroClarice}src={Clarice} alt="Livro Um sopro de Vida" />
+            <article>
+            <img className={S.livroClarice}src={Clarice} alt="Livro Um sopro de Vida" />
                 <h3>Um Sopro de Vida</h3>
-                <h4>Clarice Lispector</h4>
+                <p>Clarice Lispector</p>
                 <p>Ficção Psicológicos</p>
+            </article>
             </div>
             <div>
-                <img className={S.img} src={Hamlet} alt="Livro Hamlet" />
+            <article>
+            <img className={S.img} src={Hamlet} alt="Livro Hamlet" />
                 <h3> Hamlet </h3>
-                <h4> William Shakespeare </h4>
+                <p> William Shakespeare </p>
                 <p>Literatura e Ficção</p>
+            </article>
             </div>
             <div>
-                <img className={S.img} src={Dostoievski} alt="Livros Memorias do Subsolo" />
+            <article>
+            <img className={S.img} src={Dostoievski} alt="Livros Memorias do Subsolo" />
                 <h3> Memorias do Subsolo </h3>
-                <h4> Fiódor Dostoiévski </h4>
+                <p> Fiódor Dostoiévski </p>
                 <p> Ficção Literária</p>
+            </article>
+
             </div>
             <div>
-                <img className={S.img} src={Essencialismo} alt="Livros Essencialismo" />
+            <article>
+            <img className={S.img} src={Essencialismo} alt="Livros Essencialismo" />
                 <h3> Essencialismo </h3>
-                <h4> Greg Mckeown </h4>
+                <p> Greg Mckeown </p>
                 <p> Ficção Literária</p>
+            </article>
+        
             </div>
 
         </section>
