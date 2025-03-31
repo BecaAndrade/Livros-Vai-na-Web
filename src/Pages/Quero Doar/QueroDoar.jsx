@@ -11,7 +11,7 @@ export default function QueroDoar(){
     const [titulo, setTitulo] = useState("")
     const [categoria, setCategoria]= useState("")
     const [autor, setAutor] = useState("")
-    const [imagem_url, setImagem] = useState("")
+    const [imagem_url, setImagem_url] = useState("")
 
     const enviarDados = async() => {
 
@@ -23,6 +23,8 @@ export default function QueroDoar(){
             autor,
             imagem_url,
         }
+
+
         await axios.post(urlApi,dadosEnviar)
 
         alert("Livro Enviado")
@@ -30,7 +32,7 @@ export default function QueroDoar(){
         setTitulo("")
         setCategoria("")
         setAutor("")
-        setImagem("")
+        setImagem_url("")
     }
 
 
@@ -48,8 +50,8 @@ export default function QueroDoar(){
     }
 
     const capturaImagem = (e) => {
-        setImagem(e.target.value)
-    }
+        setImagem_url(e.target.value);
+    }    
 
     return(
         <section className={S.Principal}>
