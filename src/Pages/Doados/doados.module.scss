@@ -16,36 +16,30 @@
     align-items: center;
 
     div{
-        // border: solid 2px greenyellow;
-        width: 20vw;
-        height: 50vh;
+       border: solid 2px greenyellow;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
-        border-radius: 20px;
-        border: 3px solid #005695;
+    
 
         article{
-            // border: solid 2px pink;
+            border: 3px solid #005695;
+            height: 45vh;
+            width: 30vh;
+            border-radius: 20px;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;            
+            justify-content: space-around;
+            align-items: center;       
+            
+            img{
+                width: 200px;
+                border-radius: 20px;
+            }
 
         }
 
     }
 }
-.img{
-    width: 130px;
-    height: 200px;
-    border-radius: 5px;
 
-}
 
-.livroAlice,.livroClarice{
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-
-}
