@@ -9,14 +9,17 @@
 }
 
 .boxLivros{
-    // border: solid 2px red;
-    height: 60vh;
-    display: flex;
+   border: solid 2px red;
+   min-height: 70vh; 
+   display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
     align-items: center;
+    margin-bottom: 20px;
 
     div{
-       border: solid 2px greenyellow;
+    //    border: solid 2px greenyellow;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -24,17 +27,20 @@
 
         article{
             border: 3px solid #005695;
-            height: 45vh;
-            width: 30vh;
+            height: 55vh;
+            width: 40vh;
             border-radius: 20px;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;       
             
             img{
                 width: 200px;
                 border-radius: 20px;
+            }
+            p{
+                font-size: 1.5em;
             }
 
         }
