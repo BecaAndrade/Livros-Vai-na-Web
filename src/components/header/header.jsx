@@ -15,15 +15,17 @@ function Header() {
     <BrowserRouter>
     <header>
         <section className={S.LogoHeader}>
-        <img src={Logo} alt="Imagem de ilustração de livro aberto com capa azul" />
+        <Link to="/">
+        <img className={S.Logo} src={Logo} alt="Imagem de ilustração de livro aberto com capa azul" />           
+        </Link>
         <h2>Livros Vai na Web</h2>
         </section>
 
         <nav className={S.nav}>
             <ul>
-            <li><Link className={S.link} to="/">Início</Link></li>
-            <li><Link className={S.link} to="Doados">Livros Doados</Link></li>
-            <li><Link className={S.link} to="QueroDoar">Quero Doar</Link></li>
+            <li className={S.Inicio}><Link className={S.link} to="/">Início</Link></li>
+            <li className={S.Livros}><Link className={S.link} to="Doados">Livros Doados</Link></li>
+            <li className={S.Quero}><Link className={S.link} to="QueroDoar">Quero Doar</Link></li>
             </ul>
         </nav>
         <section className={S.BarradeBusca}>

@@ -58,7 +58,7 @@ export default function QueroDoar(){
             <section className={S.Container}>
         <h2>Por favor, preencha o formulário com suas informações e as informações do Livro</h2>
         <form onSubmit={(e) => e.preventDefault()}>
-        <div>
+        <div className={S.Descricao}>
             <img src={Livro} alt="Icone de um Livro" />
             <h3>Informações do Livro</h3>
         </div>
